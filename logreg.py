@@ -148,10 +148,12 @@ eps = 10**(-6)
 
 logreg = LogReg((data_x, data_y), learn_rate, eps)
 bias, weights = logreg.main()
+print(f'COMPLETELY SEPARABLE DATA:')
 print(f'Bias: {bias}   Weights: {weights}')
 
 logreg_out = LogReg((data_x_out, data_y_out), learn_rate, eps)
 bias_out, weights_out = logreg_out.main()
+print(f'PARTIALLY SEPARABLE DATA:')
 print(f'Bias: {bias_out}   Weights: {weights_out}')
 
 
